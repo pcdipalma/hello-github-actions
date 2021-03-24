@@ -1,0 +1,2 @@
+name: The workflow for my first pipeline
+on: push
