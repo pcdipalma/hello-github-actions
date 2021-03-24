@@ -1,0 +1,17 @@
+name: "Hello Actions"
+description: "Gonna greet someone, y'all"
+author: "pcdipalma@gmail.com"
+
+inputs:
+  MY_NAME:
+    description: "Who I be greetin'"
+    required: true
+    default: "YoMomma"
+
+runs:
+  using: "docker"
+  image: Dockerfile"
+  
+branding:
+  icon: "mic"
+  color: "purple"
