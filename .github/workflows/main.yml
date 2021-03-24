@@ -1,2 +1,12 @@
 name: The workflow for my first pipeline
 on: push
+
+jobs:
+  build:
+    name: The main Action
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: ./action-a
+        with:
+          MY_NAME: "PCD"
